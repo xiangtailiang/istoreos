@@ -458,7 +458,7 @@
 };
 
 &gmac1 {
-    snps,reset-gpio = <&gpio4 RK_PC2 GPIO_ACTIVE_LOW>;
+    snps,reset-gpio = <&gpio4 RK_PC2 GPIO_ACTIVE_HIGH>;
     snps,reset-active-low;
     /* Reset time is 20ms, 100ms for rtl8211f */
     snps,reset-delays-us = <0 20000 100000>;
@@ -485,10 +485,11 @@
 };
 
 &mdio1 {
-    rgmii_phy1: phy@0 {
-        compatible = "ethernet-phy-ieee802.3-c22";
+	rgmii_phy1: ethernet-phy@1 {
+		compatible = "ethernet-phy-ieee802.3-c22";
         reg = <0x0>;
-    };
+		status = "okay";
+	};
 };
 
 &pinctrl {
