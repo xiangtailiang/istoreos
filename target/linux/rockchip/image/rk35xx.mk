@@ -263,6 +263,16 @@ $(call Device/rk3566)
 endef
 TARGET_DEVICES += jp_tvbox
 
+define Device/jenson-amb-r56600
+$(call Device/rk3566)
+  DEVICE_VENDOR := Jenson
+  DEVICE_MODEL := AMB-R56600
+  DEVICE_DTS := rk3566-jenson-amb-r56600
+  SUPPORTED_DEVICES += jenson,rk3566
+  DEVICE_PACKAGES := kmod-scsi-core
+endef
+TARGET_DEVICES += jenson-amb-r56600
+
 define Device/panther_x2
 $(call Device/rk3566)
   DEVICE_VENDOR := Panther
