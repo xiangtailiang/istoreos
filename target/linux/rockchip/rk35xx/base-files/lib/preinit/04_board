@@ -47,6 +47,7 @@ preinit_otg() {
 		# unknown
 		;;
 	ynn,nas|\
+	jenson,rk3566|\
 	jp,tvbox)
 		# default host mode, nothing to do
 		;;

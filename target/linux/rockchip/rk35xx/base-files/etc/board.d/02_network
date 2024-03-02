@@ -97,6 +97,7 @@ rockchip_setup_macs()
 	yyy,h1|\
 	idiskk,h1|\
 	jp,tvbox|\
+	jenson,rk3566|\
 	panther,x2|\
 	lyt,t68m|\
 	nlnet,xgp|\
